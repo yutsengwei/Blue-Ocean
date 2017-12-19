@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        build(job: 'Project black_hole_build_image', propagate: true, wait: true, quietPeriod: 5)
+        build(job: 'black_hole_build_image', propagate: true, wait: true, quietPeriod: 5)
       }
     }
   }
